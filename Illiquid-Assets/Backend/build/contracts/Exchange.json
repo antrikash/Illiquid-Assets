@@ -1,0 +1,893 @@
+{
+  "contract_name": "Exchange",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_holder",
+          "type": "address"
+        }
+      ],
+      "name": "getATBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "assetToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "setATOwner",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_holder",
+          "type": "address"
+        }
+      ],
+      "name": "getCTBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "ATtransfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOfCT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "CTtransfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "ATtransferFrom",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "currencyToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_amt",
+          "type": "uint256"
+        },
+        {
+          "name": "_seller",
+          "type": "address"
+        }
+      ],
+      "name": "tradeCurrencyWithAsset",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_amt",
+          "type": "uint256"
+        },
+        {
+          "name": "_buyer",
+          "type": "address"
+        }
+      ],
+      "name": "tradeAssetWithCurrency",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "setCTOwner",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOfAT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "CTtransferFrom",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addressOfTokenUsedAsAsset",
+          "type": "address"
+        },
+        {
+          "name": "addressOfTokenUsedAsCurrency",
+          "type": "address"
+        }
+      ],
+      "name": "setExchange",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ATOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "allowanceOfAT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "CTOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "allowanceOfCT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "currencyTransfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "assetTransfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040525b5b6103e8600290815560408051808201909152600b8082527f417373657420546f6b656e000000000000000000000000000000000000000000602092830190815260008054818052825160ff191660161782559094601f600019610100600185161502019092160401929092047f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56390810192620000cd565b82800160010185558215620000cd579182015b82811115620000cd578251825591602001919060010190620000b0565b5b50620000f19291505b80821115620000ed5760008155600101620000d7565b5090565b50506040805180820190915260028082527f415400000000000000000000000000000000000000000000000000000000000060209283019081526001805460008290528251600460ff1990911617825590937fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6828616156101000260001901909216849004601f010481019291620001b4565b82800160010185558215620001b4579182015b82811115620001b457825182559160200191906001019062000197565b5b50620001d89291505b80821115620000ed5760008155600101620000d7565b5090565b50505b6103e860085560408051808201909152600e8082527f43757272656e637920546f6b656e00000000000000000000000000000000000060209283019081526006805460008290528251601c60ff1990911617825590937ff652222313e28459528d920b65115c16c04f3efc82aaedc97be59f3f377c0d3f60026001841615610100026000190190931692909204601f010481019291620002a6565b82800160010185558215620002a6579182015b82811115620002a657825182559160200191906001019062000289565b5b50620002ca9291505b80821115620000ed5760008155600101620000d7565b5090565b50506040805180820190915260028082527f435400000000000000000000000000000000000000000000000000000000000060209283019081526007805460008290528251600460ff1990911617825590937fa66cc928b5edb82af9bd49922954155ab7b0942694bea4ce44661d9a8736c68860018316156101000260001901909216849004601f0104810192916200038e565b828001600101855582156200038e579182015b828111156200038e57825182559160200191906001019062000371565b5b50620003b29291505b80821115620000ed5760008155600101620000d7565b5090565b50505b5b610d2480620003c66000396000f3006060604052361561010c5763ffffffff60e060020a60003504166306d5b544811461011157806306fdde031461013c5780631083f761146101c957806318160ddd146101f25780631f9d643a14610211578063240d6b6b1461023e578063270bd9891461026957806350111daa14610287578063522ee7a2146102b25780635995ac35146102d05780636b2fa37414610306578063763ec9771461032f5780637ef959971461034d5780638181ff0c1461036b57806393cb04d31461039857806395d89b41146103c3578063badeb94414610450578063bb60160e14610486578063c5faede0146104a7578063d26fc1c5146104d0578063d5ce6d6914610501578063dd20a9861461052a575b610000565b346100005761012a600160a060020a036004351661055b565b60408051918252519081900360200190f35b346100005761014961057c565b60408051602080825283518183015283519192839290830191850190808383821561018f575b80518252602083111561018f57601f19909201916020918201910161016f565b505050905090810190601f1680156101bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34610000576101d661060a565b60408051600160a060020a039092168252519081900360200190f35b346100005761012a610619565b60408051918252519081900360200190f35b346100005761022a600160a060020a036004351661061f565b604080519115158252519081900360200190f35b346100005761012a600160a060020a036004351661065d565b60408051918252519081900360200190f35b3461000057610285600160a060020a036004351660243561067e565b005b346100005761012a600160a060020a0360043516610757565b60408051918252519081900360200190f35b3461000057610285600160a060020a0360043516602435610769565b005b346100005761022a600160a060020a0360043581169060243516604435610842565b604080519115158252519081900360200190f35b34610000576101d6610969565b60408051600160a060020a039092168252519081900360200190f35b3461000057610285600435600160a060020a0360243516610978565b005b3461000057610285600435600160a060020a03602435166109f1565b005b346100005761022a600160a060020a0360043516610a6a565b604080519115158252519081900360200190f35b346100005761012a600160a060020a0360043516610aa8565b60408051918252519081900360200190f35b3461000057610149610aba565b60408051602080825283518183015283519192839290830191850190808383821561018f575b80518252602083111561018f57601f19909201916020918201910161016f565b505050905090810190601f1680156101bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b346100005761022a600160a060020a0360043581169060243516604435610b48565b604080519115158252519081900360200190f35b3461000057610285600160a060020a0360043581169060243516610c6b565b005b34610000576101d6610ca0565b60408051600160a060020a039092168252519081900360200190f35b346100005761012a600160a060020a0360043581169060243516610caf565b60408051918252519081900360200190f35b34610000576101d6610ccc565b60408051600160a060020a039092168252519081900360200190f35b346100005761012a600160a060020a0360043581169060243516610cdb565b60408051918252519081900360200190f35b600160a060020a038116600090815260046020526040902054805b50919050565b6006805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156106025780601f106105d757610100808354040283529160200191610602565b820191906000526020600020905b8154815290600101906020018083116105e557829003601f168201915b505050505081565b600c54600160a060020a031681565b60085481565b60038054600160a060020a031916600160a060020a03838116919091179182905560025491166000908152600460205260408120919091555b919050565b600160a060020a0381166000908152600a6020526040902054805b50919050565b600160a060020a038216151561069357610000565b600354600160a060020a0316600090815260046020526040902054819010156106bb57610000565b600160a060020a03821660009081526004602052604090205481810110156106e257610000565b60038054600160a060020a039081166000908152600460209081526040808320805487900390558684168084529281902080548701905593548451868152945192949316927f11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65929081900390910190a35b5050565b600a6020526000908152604090205481565b600160a060020a038216151561077e57610000565b600954600160a060020a03166000908152600a6020526040902054819010156107a657610000565b600160a060020a0382166000908152600a602052604090205481810110156107cd57610000565b60098054600160a060020a039081166000908152600a60209081526040808320805487900390558684168084529281902080548701905593548451868152945192949316927ff5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8929081900390910190a35b5050565b6000600160a060020a038316151561085957610000565b600160a060020a0384166000908152600460205260409020548290101561087f57610000565b600160a060020a03831660009081526004602052604090205482810110156108a657610000565b600160a060020a038085166000908152600560209081526040808320600354909416835292905220548211156108db57610000565b600160a060020a038085166000818152600460209081526040808320805488900390558785168084528184208054890190558484526005835281842060035490961684529482529182902080548790039055815186815291517f11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a659281900390910190a35060015b9392505050565b600d54600160a060020a031681565b600d54604080517f522ee7a2000000000000000000000000000000000000000000000000000000008152600160a060020a038481166004830152602482018690529151919092169163522ee7a291604480830192600092919082900301818387803b156100005760325a03f115610000575050505b5050565b600c54604080517f270bd989000000000000000000000000000000000000000000000000000000008152600160a060020a038481166004830152602482018690529151919092169163270bd98991604480830192600092919082900301818387803b156100005760325a03f115610000575050505b5050565b60098054600160a060020a031916600160a060020a03838116919091179182905560085491166000908152600a60205260408120919091555b919050565b60046020526000908152604090205481565b6007805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156106025780601f106105d757610100808354040283529160200191610602565b820191906000526020600020905b8154815290600101906020018083116105e557829003601f168201915b505050505081565b6000600160a060020a0383161515610b5f57610000565b600160a060020a0384166000908152600a602052604090205482901015610b8557610000565b600160a060020a0383166000908152600a60205260409020548281011015610bac57610000565b600160a060020a038085166000908152600b602090815260408083203390941683529290522054821115610bdf57610000565b600160a060020a038085166000818152600a6020908152604080832080548890039055878516808452818420805489019055848452600b83528184203390961684529482529182902080548790039055815186815291517ff5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd89281900390910190a35060015b9392505050565b600c8054600160a060020a03808516600160a060020a031992831617909255600d8054928416929091169190911790555b5050565b600354600160a060020a031681565b600560209081526000928352604080842090915290825290205481565b600954600160a060020a031681565b600b602090815260009283526040808420909152908252902054815600a165627a7a723058204e060a3f8bdb859ef2fbdfcd8536daf86fa81dbe2bea686deef0d765e5859d590029",
+  "networks": {
+    "1495694898565": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xcd6298522ed76a72679b0de2f119747c5bf1f8e1",
+      "updated_at": 1495698890930
+    },
+    "1495711950898": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x5bfabbae1d3bfae5358778f4a942cecac1e0b8f7",
+      "updated_at": 1495716548758
+    },
+    "1495772747995": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xace4ad83948fc17ff5fbde6341be845987fc6ea7",
+      "updated_at": 1495772774475
+    },
+    "1496152156355": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd13b2f04e034b541342808519df0420b29904c82",
+      "updated_at": 1496153816668
+    },
+    "1496204726012": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xef834b605b2584c6678ec61cb3ef198a35437b26",
+      "updated_at": 1496205451425
+    },
+    "1496205573947": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x50a31e4bb71eae565188b15ab237a3a0ffe44318",
+      "updated_at": 1496205658595
+    },
+    "1496205723917": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf791a9a6c08d698b108c869a94345d83e9b7eda6",
+      "updated_at": 1496205787352
+    },
+    "1496207122046": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x5ba38ab8bf5842300a415cd9db462bf0d0c67358",
+      "updated_at": 1496207470309
+    },
+    "1496208066766": {
+      "events": {
+        "0xf5ca2cac7d01d9b05d6a1d7c7ad8e206b4a68fcdc340ccf5cd15b58b611dccd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "currencyTransfer",
+          "type": "event"
+        },
+        "0x11f2f8818d4f23bf04ecfec58c55a9d384b9509a8148de29e7fa0f24305d4a65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "assetTransfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8a9780fab6107b2ab2094e4b1b5639727915e6f8",
+      "updated_at": 1496208129325
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1496208129325
+}
