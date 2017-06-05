@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Illiquid Assets</title>    
+<meta charset="UTF-8",lang="en"/>   
+<script src="app.js"></script>
+<link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 id="main-heading">ILLIQUID ASSETS</h1>
+    <a href="user.html"><button id="signup-btn" type="button" >Signup</button></a>
+    <form>
+        <ul id="list-asset">
+        <li class="list-asset-li"><label>Name of asset:</label><input id="asset-name"/></li>
+        <li class="list-asset-li"><label>Quantity:</label><input id="quantity" /></li>
+        <li class="list-asset-li"><label>Price:</label><input id="price" onkeyup="calculate()"/></li>
+        <li class="list-asset-li">
+                <label>Type:</label>
+                <select id="type">
+                    <option value="Bonds">Bonds</option>
+                    <option value="Nano-Stocks">Nano-Stocks</option>
+                    <option value="OTC derivatives">OTC derivatives</option>
+                    <option value="Penny-Stocks">Penny-Stocks</option>
+                </select>
+        </li>
+        <li class="list-asset-li"><label>Total Price:</label><input id="total" /></li>
+        </ul>
+<button id="save-btn" type="button" onclick="saveAssetData()">Submit</button>
+<button id="reset-btn" type="button" onclick="resetAssetData()">Reset</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New User Registration</title>    
+<meta charset="UTF-8",lang="en"/>   
+<script src="app.js"></script>
+<link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 id="Regd-Form-heading">Registration Form</h1>
+    <a href="index.html"><button id="regd-asset-btn" type="button" >Add Asset</button></a>
+	<a href="login.html"><button id="user-login-btn" type="button" >Login</button></a>
+    <form>
+        <ul id="list-user">
+        <li class="list-user-li" id="user-first-name"><label>First Name:</label><input id="first-name"/></li>
+        <li class="list-user-li" id="user-last-name"><label>Last Name:</label><input id="last-name" /></li>
+        <li class="list-user-li" id="user-wallet-number"><label>Wallet Address:</label><input id="wallet-address" /></li>
+        <li class="list-user-li" id="user-mob-number"><label>Mobile:</label><input type="number" min="0" id="mob-number" /></li>
+        <li class="list-user-li" id="user-PAN-number"><label>PAN ID:</label><input id="pan-number" /></li>
+        <li class="list-user-li" id="user-password"><label>Enter Password:</label><input type ="password" id="password" /></li>
+        <li class="list-user-li" id="user-conf-password"><label>Confirm password:</label><input type ="password" id="conf-password" /></li>
+        </ul>
+<button id="save-user-btn" type="button" onclick="saveUserData()">Submit</button>
+<button id="reset-user-btn" type="button" onclick="resetUserData()">Reset</button>
+    </form>
+</body>
+</html>

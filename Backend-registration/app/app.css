@@ -1,0 +1,165 @@
+
+
+/*************************index page css *********************************/
+
+#main-heading{
+color: blue;
+text-align: center;
+border-bottom: 2px solid black;
+}
+#signup-btn{
+    width: 80px;
+    height: 22px;
+    float: right;
+    margin-top: -15px;
+    margin-right: 150px;
+    border-radius:60px;  
+}
+#list-asset{
+list-style-type: none;
+font-weight: bold;
+margin-bottom: 8px;
+}
+#asset-name{
+margin-left: 20px;
+}
+#quantity{
+margin-left: 53px;
+}
+#price{
+margin-left: 79px;
+}
+#type{
+margin-left: 77px;
+}
+#total{
+margin-left: 40px;
+}
+.list-asset-li{
+    padding-bottom: 5px;
+}
+#save-btn{
+    width: 80px;
+    height: 22px;
+    margin-left: 157px;
+    border-radius:60px; 
+}
+#reset-btn{
+    width: 80px;
+    height: 22px;
+    margin-left: 17px;
+    border-radius:60px;
+}
+
+/************************************User page css**************************************************/
+
+
+
+#Regd-Form-heading{
+    color: deeppink;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+#regd-asset-btn{
+    width: 80px;
+    height: 22px;
+    float: right;
+    margin-top: -15px;
+    margin-right: 150px;
+    border-radius:60px;    
+}
+#user-login-btn{
+    width: 80px;
+    height: 22px;
+    float: right;
+    margin-top: -15px;
+    margin-right: 46px;
+    border-radius:60px;
+}
+.list-user-li{
+    padding-bottom: 5px;
+}
+#list-user{
+    list-style-type: none;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#first-name{
+margin-left: 108px;
+}
+#last-name{
+margin-left: 110px;
+}
+#mob-number{
+margin-left: 137px;
+}
+#wallet-address{
+margin-left: 81px;
+}
+#pan-number{
+margin-left: 131px;
+}
+#password{
+margin-left: 76px;
+}
+#conf-password{
+margin-left: 57px;
+}
+#save-user-btn{
+    width: 80px;
+    height: 22px;
+    margin-left: 227px;
+    border-radius:60px; 
+}
+#reset-user-btn{
+    width: 80px;
+    height: 22px;
+    margin-left: 13px;
+    border-radius:60px; 
+}
+
+/****************************************************************login page css ************************************/
+
+
+
+#login-page-heading{
+    color: deeppink;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#new-regd-btn{
+    width: 102px;
+    height: 22px;
+    float: right;
+    margin-top: -15px;
+    margin-right: 150px;
+    border-radius:60px;
+}
+#login-list{
+    list-style-type: none;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.label-cls{
+margin-left: 534px;
+margin-top: 2px;
+}
+#login-list{
+	margin-top: 43px;
+}
+#login-btn{
+    width: 73px;
+    height: 22px;
+    margin-left: 574px;
+    border-radius:60px; 
+}
+#reset-login-btn{
+    width: 73px;
+    height: 22px;
+    margin-left: 22px;
+    border-radius:60px;
+	}
+#div-btns{
+	margin-top: 13px;
+}
