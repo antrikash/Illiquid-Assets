@@ -1,0 +1,173 @@
+.Heading-corner-box {
+  background-color: white;
+  height: 53px;
+  width: 100%;
+}
+#header {
+  background: #00364A;
+  height:53px;
+  margin-left: 15px;
+  padding-top: 16px;
+  padding-left:10px;
+  }
+#Heading-name {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.Heading-corner-Names {
+  padding-top: 8px;
+  padding-left: 12px;
+  text-align: left;
+}
+
+#Co-Innovation-Lab-Name {
+  color: #16529A;
+  font-size: 16px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  
+}
+#Illiquid-Assets-Name {
+  color: #098ed7;
+  font-size: 16px;
+  font-family: 'Calibri';
+  font-weight: bold;
+}
+#Button-list-box {
+  height: 91.5%;
+  background-color: #001A22;
+  width: 100%;
+}
+.Button-style-menu {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #3E5966;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    height: 40px;
+    background-color: #001A22;
+    font-size: 14px;
+    outline: none;
+    -webkit-transition: width 1s; 
+    transition: width 0.5s;
+}
+.Button-style-menu:hover {
+width: 232px;
+background-color: #00364A;
+border-left: 3px solid #098ed7;
+}
+
+.box {
+  color: white;
+  height: 250px;
+  width: 250px;
+  margin-left: 1500px;
+  margin-top: 50px;
+}
+#Info-box {
+  color:white;
+  background-color: #00364A;
+  width: 354px;
+  height: 255px;
+  padding-top: 10px;
+  padding-left: 5px;
+  text-align: left;
+  margin-top: 96px;
+  margin-left: 159px;
+}
+#Register-box {
+  background-color: #00364A;
+  width: 354px;
+  height: 255px;
+  margin-top: 96px;
+  margin-left: 148px;
+}
+
+.Button-style {
+    width: 212px;
+    text-align: center;
+    border: 1px solid #098ed7;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    background-color: #00364A;
+    font-size: 14px;
+    outline: none;
+}
+.Button-style:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+#login-button {
+  margin-top: 51px;
+  margin-left: 60px;
+}
+#Register-button {
+  margin-top: 61px;
+  margin-left: 60px;
+}
+
+.noPadding {
+  padding:0 !important;
+  }
+
+.menuContainer {
+  height: 87%;
+}
+.well-lg.footer{
+  background-color: #00364A;
+  height: 50px;
+}
+
+.h100  {
+  height: 100%;
+}
+#footer{
+  clear: both;
+  background-color: #00364A;
+  height: 121px;
+  margin-left: 15px;
+  margin-top: 118px;}
+.hr{
+height: 1px;
+margin: 0px;
+border-color: #098ed7;
+}
+#login-input-box {
+  color: white;
+  padding-left: 10px;
+  padding-top: 28px;
+}
+
+.input-box {
+background-color: #00364A;
+border: none;
+outline: none;
+margin-left: 30px;
+}
+.hr-width {
+  width: 86%;
+}
+#user-password {
+  margin-top: 29px;
+}
+#user-login-button {
+  margin-top: 37px;
+  margin-left: 50px;
+}
+#user-Register-box {
+  background-color: #00364A;
+  width: 354px;
+  height: 255px;
+  margin-top: 96px;
+  margin-left: 148px;
+}
+#user-id {
+  margin-right: 13px;
+}
