@@ -96,7 +96,11 @@ border-left: 3px solid #098ed7;
     background-color: #00364A;
     font-size: 14px;
     outline: none;
+    
 }
+#asset-submit-btn{
+    margin-left: 143px;
+    margin-top: 25px;}
 .Button-style:hover {
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
@@ -170,4 +174,23 @@ margin-left: 30px;
 }
 #user-id {
   margin-right: 13px;
+}
+.cls-asset-regd {
+  color: white;
+  background-color: #00364A;
+  width: 354px;
+  height: 380px;
+  margin-top: 96px;
+  margin-left: 148px;
+}
+#asset-type-btn {
+background-color: #00364A;
+border-radius: 3px;
+border-color: #3E5966;
+outline-color: #3E5966;
+outline: none;
+}
+.asset-label {
+  margin-top: 15px;
+  margin-bottom: 6px;
 }

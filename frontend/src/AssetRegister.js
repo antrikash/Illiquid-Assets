@@ -1,22 +1,6 @@
 import React, { Component } from 'react';
 
 import hashFnv32a from './hash';
-// function hashFnv32a(str, asString, seed) {
-//     /*jshint bitwise:false */
-//     var i, l,
-//         hval = (seed === undefined) ? 0x811c9dc5 : seed;
-
-//     for (i = 0, l = str.length; i < l; i++) {
-//         hval ^= str.charCodeAt(i);
-//         hval += (hval << 1) + (hval << 4) + (hval << 7) + (hval << 8) + (hval << 24);
-//     }
-//     if( asString ){
-//         // Convert to 8 digit hex string
-//         return ("0000000" + (hval >>> 0).toString(16)).substr(-8);
-//     }
-//     return hval >>> 0;
-// }
-
 
 var aName;
  var assetUid;
@@ -26,8 +10,6 @@ class AssetRegistration extends Component {
 constructor(){
     super();
     this.state ={
-        newProject: {},
-        formSub : false,
         assetName: '',
         assetQuantity:'',
         pricePerAsset:'',
@@ -38,8 +20,7 @@ constructor(){
     this.updateState2 = this.updateState2.bind(this);
     this.renderSubmit = this.renderSubmit.bind(this);
     this.renderTotal = this.renderTotal.bind(this);
-    //this.generateUID = this.generateUID.bind(this);
-
+    
     }
 
 
@@ -87,33 +68,38 @@ constructor(){
           return <option key ={category} value={category}>{category}</option>
       });
      return(
-      <div>
-      <h3><strong> Register yous assets </strong> </h3>
+      <div id="asset_regd">
+       <div id="Asset-Register-box" className="cls-asset-regd col-md-5">   
+      <h3><strong> Register your assets </strong> </h3>
       <form onSubmit={this.generateUID.bind(this)}>    
         <div>
-        <label>Enter Asset name :</label>
-        <input type="text" id="input1" ref="title1" value = {this.state.assetName} onChange = {this.updateState}/><br />    
-        <label>Enter Price per Asset :</label>
-        <input type="text" id="input3" ref="title3" value = {this.state.pricePerAsset} onChange = {this.updateState2}/><br />
-        <label>Enter Quantity of Asset :</label>\
-        <input type="text" id="input2" ref="title2" value = {this.state.assetQuantity} onChange = {this.updateState1} onKeyUp={this.renderTotal} /><br />
+        <label className="asset-label">Asset name :</label>
+        <input className="input-box" type="text" id="input1" ref="title1" value = {this.state.assetName} onChange = {this.updateState}/><br />    
+        <hr className="hr noPadding"></hr>
+        <label className="asset-label">Price per Asset :</label>
+        <input className="input-box" type="text" id="input3" ref="title3" value = {this.state.pricePerAsset} onChange = {this.updateState2}/><br />
+        <hr className="hr noPadding"></hr>
+        <label className="asset-label">Quantity of Asset :</label>
+        <input className="input-box" type="text" id="input2" ref="title2" value = {this.state.assetQuantity} onChange = {this.updateState1} onKeyUp={this.renderTotal} /><br />
         {this.renderTotal}
+        <hr className="hr noPadding"></hr>
         </div>
         <div>
-        <label>Asset Type :</label>
-        <select ref="category" >
+        <label className="asset-label">Asset Type :</label>
+        <select id="asset-type-btn" ref="category" >
         {categoryOptions}
-        </select><br /><br />
+        </select><hr className="hr noPadding"></hr>
         </div>
         <div>
-        <label> Total Market value of Assets :</label>
-        <input type="text" id="input4" ref="title4" value = {this.state.totalPrice} /><br />
+        <label className="asset-label"> Total Market value of Assets :</label>
+        <input className="input-box" type="text" id="input4" ref="title4" value = {this.state.totalPrice} /><br />
+        <hr className="hr noPadding"></hr>
         </div>
-        <input type="submit" value="Submit" onClick = {this.generateUID}/>
+        <button id ="asset-submit-btn" className="Button-style" type="button" onClick = {this.generateUID}>Submit</button>
          
       </form>
         {this.renderSubmit}
-
+        </div>
          </div>
     );
   }
