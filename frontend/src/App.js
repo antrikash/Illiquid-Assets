@@ -58,7 +58,7 @@ class App extends Component {
                 <Link to="home"><button className="Button-style-menu" id="Home-button" >Home</button></Link><br />
                 <Link to="marketPLace" ><button className="Button-style-menu" id="Marketplace-button" >Marketplace</button></Link><br />
                 <Link to="About"><button className="Button-style-menu" id="About-button" >About</button></Link><br />
-                <button className="Button-style-menu" id="Default-1-button" >Default-1</button><br />
+                <Link to="AssetRegister"><button className="Button-style-menu" id="Default-1-button" >Default-1</button></Link><br />
                 <button className="Button-style-menu" id="Default-2-button" >Default-2</button><br />
 
               </div>
@@ -66,7 +66,7 @@ class App extends Component {
 
             {this.props.children}
 
-          </div>      
+          </div>
 
 
         </div>

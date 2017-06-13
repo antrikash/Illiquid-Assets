@@ -9,17 +9,20 @@ import MarketPLace from './marketPLace'
 import Login from './Login'
 import LoginForm from './loginForm'
 import RegistrationForm from './registrationForm'
+import AssetRegistration from './AssetRegister'
+
 
 ReactDOM.render((
    <Router history = {browserHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
          <Route path = "Home" component = {Home} />
-         
+
          <Route path = "about" component = {About} />
-         <Route path = "marketPLace" component = {MarketPLace} />     
-             
+         <Route path = "marketPLace" component = {MarketPLace} />
+         <Route path = "AssetRegister" component = {AssetRegistration} />
+
       </Route>
    </Router>
-	
+
 ), document.getElementById('root'))

@@ -17,6 +17,7 @@ class Home extends React.Component {
                         >>> Please click on register if you don't have an account
                     </div>
                     <Login />
+
                 </div>
                 <div className="row">
                     <div id="footer" className="noPadding"></div>

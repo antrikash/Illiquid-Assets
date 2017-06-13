@@ -1,7 +1,7 @@
 import React from 'react'
 
-class LoginForm extends React.Component {   
-   render() {      
+class LoginForm extends React.Component {
+   render() {
       return (
          <div id= "login-body">
                 {/*<div id="header">
@@ -22,7 +22,7 @@ class LoginForm extends React.Component {
                         <input id="user-password-input" type="password" className="input-box" />
 
                         <hr className="hr-width hr noPadding"></hr>
-
+                    
                     <button className="Button-style" id="user-login-button" type="button" >login</button><br />
                     </div>
                 </div>
