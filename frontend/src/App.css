@@ -26,7 +26,7 @@
   font-size: 16px;
   font-family: 'Calibri';
   font-weight: bold;
-  
+
 }
 #Illiquid-Assets-Name {
   color: #098ed7;
@@ -51,7 +51,7 @@
     background-color: #001A22;
     font-size: 14px;
     outline: none;
-    -webkit-transition: width 1s; 
+    -webkit-transition: width 1s;
     transition: width 0.5s;
 }
 .Button-style-menu:hover {
@@ -96,11 +96,14 @@ border-left: 3px solid #098ed7;
     background-color: #00364A;
     font-size: 14px;
     outline: none;
-    
+
 }
 #asset-submit-btn{
     margin-left: 143px;
     margin-top: 25px;}
+    #user-submit-btn{
+        margin-left: 42px;
+        margin-top: 25px;}
 .Button-style:hover {
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
@@ -136,8 +139,12 @@ border-left: 3px solid #098ed7;
   clear: both;
   background-color: #00364A;
   height: 121px;
-  margin-left: 15px;
-  margin-top: 118px;}
+  position:fixed;
+  left:228px;
+  bottom:0px;
+  width:100%;
+
+}
 .hr{
 height: 1px;
 margin: 0px;
@@ -168,8 +175,8 @@ margin-left: 30px;
 #user-Register-box {
   background-color: #00364A;
   width: 354px;
-  height: 255px;
-  margin-top: 96px;
+  height: 368px;
+  margin-top: 60px;
   margin-left: 148px;
 }
 #user-id {
